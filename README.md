@@ -1,1 +1,3 @@
 # ACM
+Hello, I'm, Om Parida from B.Sc. CS 1st Year...Though most people in the college know me as CoolSpidey, Spidey,....
+I like playing Volleyball, Watching Anime, Listening to Music (Hence the CodeName)
