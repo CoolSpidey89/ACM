@@ -1,60 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Information Form</title>
+    <title>Student Details Form</title>
 </head>
 <body>
-    <h2>Student Information</h2>
+
+    <h2>Student Details Form</h2>
+
     <form>
         <fieldset>
-            <legend>Basic Info</legend>
+            <legend>Personal Details</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name"><br><br>
 
-            <label for="course">Course:</label>
-            <input type="text" id="course" name="course" placeholder="Course"><br><br>
+            <label for="program">Program / Course:</label>
+            <input type="text" id="program" name="program" placeholder="e.g., BMS, BBA, B.Sc CS"><br><br>
 
-            <label for="dob">Date of Birth:</label>
+            <label for="dob">Birthdate:</label>
             <input type="date" id="dob" name="dob"><br><br>
 
             <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="Other">
-            <label for="other">Other</label><br><br>
+            <input type="radio" id="gMale" name="gender" value="Male">
+            <label for="gMale">Male</label>
+
+            <input type="radio" id="gFemale" name="gender" value="Female">
+            <label for="gFemale">Female</label>
+
+            <input type="radio" id="gOther" name="gender" value="Other">
+            <label for="gOther">Other</label><br><br>
 
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="0" max="120"><br><br>
+            <input type="number" id="age" name="age" min="1" max="120"><br><br>
+        </fieldset>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="name.rollno@sscbs.du.ac.in"><br><br>
+        <br>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91-__________"><br><br>
+        <fieldset>
+            <legend>Contact Details</legend>
 
-            <label for="address">Address:</label><br>
-            <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address"></textarea><br><br>
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" placeholder="rollno.name@sscbs.du.ac.in"><br><br>
 
-            <label>Subjects you have chosen:</label><br>
-            <input type="checkbox" id="math" name="subjects" value="Math">
-            <label for="math">Mathematics for Computing</label><br>
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX"><br><br>
 
-            <input type="checkbox" id="physics" name="subjects" value="Physics">
-            <label for="physics">C.S.A</label><br>
-
-            <input type="checkbox" id="chemistry" name="subjects" value="Chemistry">
-            <label for="chemistry">Python</label><br>
-
-            <input type="checkbox" id="biology" name="subjects" value="Biology">
-            <label for="biology">E.V.S</label><br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <label for="address">Residential Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="32" placeholder="Enter full address"></textarea><br><br>
 
         </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Subjects Opted</legend>
+
+            <input type="checkbox" id="subMath" name="subjects" value="Maths">
+            <label for="subMath">Mathematics for Computing</label><br>
+
+            <input type="checkbox" id="subCSA" name="subjects" value="CSA">
+            <label for="subCSA">Computer System Architecture</label><br>
+
+            <input type="checkbox" id="subPython" name="subjects" value="Python">
+            <label for="subPython">Python Programming</label><br>
+
+            <input type="checkbox" id="subEVS" name="subjects" value="EVS">
+            <label for="subEVS">Environmental Studies</label><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Clear">
+
     </form>
+
 </body>
 </html>
+
